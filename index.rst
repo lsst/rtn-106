@@ -20,7 +20,14 @@ To test and demonstrate the functionality and science-readiness of individual co
 Timeline
 ========
 
+Tentative shutdown dates
+------------------------
 
+* Sep ? - Oct ?: Rubin Observatory shutdown
+* Oct 3 - Nov 24: SOAR shutdown 
+* Oct 13 - Nov 7: Gemini N shutdown
+
+Oct 22-24: Rubin Construction Completeness Review 3 (CCR3) and Operations Readiness Review 2 (ORR2)
 
 Prerequisites
 -------------
@@ -28,6 +35,7 @@ Prerequisites
 The conditions under which the first alerts end-to-end demo can occur are:
 
  * agency security review complete
+ * all observatories are on-sky
  * all components are online
  * targets are scheduled for observations
  * draft announcements are prepared
@@ -38,6 +46,15 @@ Components
 ==========
 
 Brief descriptions and links to documentation for each of the components incorporated into the first alerts end-to-end demo.
+
+Rubin EPO and Comms
+-------------------
+
+EPO: Education and Public Outreach
+
+Comms: Communications team
+
+The Rubin EPO and Communications teams will bring this demo to the public with graphcs and press articles.
 
 
 Rubin DIA and AP
@@ -94,6 +111,20 @@ Hermes
 `Hermes documentation <https://hermes.lco.global/about>`_
 
 HERMES is a Message Exchange Service for Multi-Messenger Astronomy applications that allow users to both send and review messages related to a variety of events and targets of interest as well as understand opportunities for follow-up.
+
+
+DRAGONS
+-------
+
+_text to be added_
+
+GPP
+---
+
+GPP: Gemini Program Platform
+
+_text to be added_
+
 
 
 

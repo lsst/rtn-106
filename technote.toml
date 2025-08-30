@@ -21,3 +21,39 @@ orcid = "https://orcid.org/0000-0003-0800-8755"
 name = "Vera C. Rubin Observatory"
 internal_id = "RubinObsC"
 address = "La Serena"
+[[technote.authors]]
+name = {given = "Melissa L.", family = "Graham"}
+internal_id = "grahamml"
+orcid = "https://orcid.org/0000-0002-9154-3136"
+[[technote.authors.affiliations]]
+name = "University of Washington"
+internal_id = "Washington"
+ror = "https://ror.org/00cvxb145"
+
+[[technote.authors.affiliations]]
+name = "University of Washington"
+internal_id = "Washington-DIRAC"
+ror = "https://ror.org/00cvxb145"
+[[technote.authors]]
+name = {given = "Eric C.", family = "Bellm"}
+internal_id = "bellme"
+orcid = "https://orcid.org/0000-0001-8018-5348"
+[[technote.authors.affiliations]]
+name = "University of Washington"
+internal_id = "Washington"
+ror = "https://ror.org/00cvxb145"
+[[technote.authors]]
+name = {given = "Rachel A.", family = "Street"}
+internal_id = "streetra"
+orcid = "https://orcid.org/0000-0001-6279-0552"
+[[technote.authors.affiliations]]
+name = "Las Cumbres Observatory"
+internal_id = "CUMBRES"
+ror = "https://ror.org/02ar7h206"
+[[technote.authors]]
+name = {given = "Bryan", family = "Miller"}
+internal_id = "millerb"
+[[technote.authors.affiliations]]
+name = "NSF NOIRLab"
+internal_id = "NOIRLab"
+ror = "https://ror.org/03zmsge54"

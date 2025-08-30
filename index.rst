@@ -16,7 +16,9 @@ This is a living document that will evolve as the plans for the alert end-to-end
 Goals
 =====
 
-To use Rubin data to test and demonstrate the functionality and science-readiness of individual components of the automated alert follow-up ecosystem, to both the science community and the general public.
+To use Rubin data to test and demonstrate the functionality and science-readiness of individual components of the automated alert follow-up ecosystem.
+
+The target audience of this demo is both the science community and the general public.
 
 
 Timeline
@@ -87,7 +89,9 @@ Any extragalactic field (i.e., high Galactic latitude) should yield several SN c
 
 ANTARES already has filters that can identify SN candidates.
 
-GOATS/AEON could schedule follow-up spectra for several, and it's likely at least one could be classified.
+GOATS/AEON could schedule follow-up spectra for several candidates, and it's likely at least one could be classified (e.g., Type I, II, and sub-type).
+
+In the SN field, classifications are regularly shared by time-domain surveys, and reported to the `Transient Name Server <https://www.wis-tns.org/>`_ to obtain an IAU designation.
 
 
 Variable star
@@ -95,7 +99,7 @@ Variable star
 
 Similar case as supernovae, but for Galactic fields.
 
-M-dwarf flares are pretty common, and this might work ok for press but the scientific community might not be impressed.
+For example, M-dwarf flares are pretty common, and this might work ok for press, but the scientific community might not be impressed.
 
 
 Microlensing event

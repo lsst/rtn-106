@@ -30,9 +30,9 @@ After the Rubin Observatory shutdown, and once all prerequisite conditions are m
 Shutdown dates
 --------------
 
-These dates are tentative, and to be confirmed.
+These dates are subject to change by the respective observatories.
 
-* Sep ? - Oct ?: Rubin Observatory shutdown
+* Sep 22 - Oct 20: Rubin Observatory shutdown
 * Oct 3 - Nov 24: SOAR shutdown
 * Oct 13 - Nov 7: Gemini N shutdown
 

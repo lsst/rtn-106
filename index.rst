@@ -102,6 +102,15 @@ Similar case as supernovae, but for Galactic fields.
 For example, M-dwarf flares are pretty common, and this might work ok for press, but the scientific community might not be impressed.
 
 
+Tidal Disruption Event (TDE)
+----------------------------
+
+TDEs are nuclear transients, good candidates are in host galaxies with no AGN.
+
+They are new and popular in astronomy, and they are good for EPO because they are black holes.
+
+They are more rare in galaxy cores than supernovae, but if we aim for a TDE but end with a supernova, that would be fine.
+
 Microlensing event
 ------------------
 

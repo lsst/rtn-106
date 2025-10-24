@@ -24,17 +24,7 @@ The target audience of this demo is both the science community and the general p
 Timeline
 ========
 
-After the Rubin Observatory shutdown, and once all prerequisite conditions are met, the alerts end-to-end demo will proceed.
-
-
-Shutdown dates
---------------
-
-These dates are subject to change by the respective observatories.
-
-* Sep 22 - Oct 20: Rubin Observatory shutdown
-* Oct 3 - Nov 24: SOAR shutdown
-* Oct 13 - Nov 7: Gemini N shutdown
+The goal is to execute the alerts end-to-end demo by the end of November 2025, with a contingency of mid-December.
 
 
 Prerequisites
@@ -43,10 +33,11 @@ Prerequisites
 The conditions under which the first alerts end-to-end demo can occur are:
 
 * agency security review complete (done)
-* all observatories are on-sky
+* all observatories are on-sky post-shutdown
 * all components are online
 * compatible fields are scheduled for observations
-* draft EPO announcements are prepared
+* SOAR is in AEON mode
+* draft EPO/Comms announcements are prepared
 * humans are available
 
 
@@ -57,25 +48,23 @@ The following sequence of events might run in one night for one or more science 
 
 1. Image acquisition: observations are acquired at Rubin Observatory.
 
-2. Alert production: Rubin DIA and AP pipelines run, distrubting alerts to brokers.
+2. Alert production: Rubin DIA and AP pipelines run, distributing alerts to brokers.
 
 3. ANTARES: a science filter identifies targets of interest for this end-to-end demo.
 
-4. GOATS: queries and retrieves the targets of interest, down-selects, and triggers AEON.
+4. GOATS: queries and retrieves the targets of interest from ANTARES, down-selects, and triggers AEON.
 
-5. AEON: recieves follow-up trigger request from GOATS and executes observations with SOAR, Gemini, or Las Cumbres Observatories.
+5. AEON: receives follow-up trigger request from GOATS and executes observations with SOAR, Gemini, and/or Las Cumbres Observatories.
 
-6. GOATS: recieves and processes the follow-up observations, and runs, e.g., spectral classification.
+6. GOATS: receives raw data from Gemini and runs DRAGONS; receives processed data from SOAR and/or Las Cumbres; runs analysis automatically, e.g., spectral classification.
 
-7. Hermes: results are shared with the science community.
+7. GOATS/Hermes: results (e.g., supernova classification) are shared with the science community (e.g., with a Transient Name Server report).
 
 8. Press: announcement from EPO/Comms teams goes out via the usual channels.
 
 
-
-
-Targets
-=======
+Potential targets
+=================
 
 Potential science use cases and targets for the end-to-end demo, and relevant considerations for each.
 
@@ -87,11 +76,11 @@ Supernovae
 
 Any extragalactic field (i.e., high Galactic latitude) should yield several SN candidates.
 
-ANTARES already has filters that can identify SN candidates.
+ANTARES already has filters that can identify SN candidates, but the one submitted for automatic reduction should be well offset from its host.
 
 GOATS/AEON could schedule follow-up spectra for several candidates, and it's likely at least one could be classified (e.g., Type I, II, and sub-type).
 
-In the SN field, classifications are regularly shared by time-domain surveys, and reported to the `Transient Name Server <https://www.wis-tns.org/>`_ to obtain an IAU designation.
+In the SN field, classifications are regularly shared by time-domain surveys, and reported to the `Transient Name Server <https://www.wis-tns.org/>`_ (TNS) to obtain an IAU designation.
 
 
 Variable star
@@ -99,7 +88,10 @@ Variable star
 
 Similar case as supernovae, but for Galactic fields.
 
-For example, M-dwarf flares are pretty common, and this might work ok for press, but the scientific community might not be impressed.
+For example, M-dwarf flares are pretty common.
+They have a much shorter duration (minutes to hours) which would be good for demonstrating the utility of the automatic responses of the alerts ecosystem.
+
+Though this target might work ok for press, since they are quite common it's unclear how well this target would work to impress the scientific community.
 
 
 Tidal Disruption Event (TDE)
@@ -111,6 +103,7 @@ They are new and popular in astronomy, and they are good for EPO because they ar
 
 They are more rare in galaxy cores than supernovae, but if we aim for a TDE but end with a supernova, that would be fine.
 
+
 Microlensing event
 ------------------
 
@@ -121,12 +114,42 @@ Solar system object
 -------------------
 
 ANTARES does not currently have filters for moving objects, and instead passes them on to the SNAPS broker.
-This might be a too-challenging case for automatic follow-up, for this demo.
+Thus, they are probably too challenging a case for automatic follow-up for this demo.
 
 A known moving object that changes in brightness could potentially be automatically identified,
 but confirmation of cometary activity (e.g., outgassing) might require too long a follow-up timescale.
 
 A new moving object (such as an NEO) would be unlikely on any given single night.
+
+
+
+Identification and follow-up
+============================
+
+ANTARES filter
+--------------
+
+In November 2025, most alerts are likely to come from the Deep Drilling Fields (DDFs), which have templates and are in observable regions of sky.
+
+Thus, in identifying the potential follow-up target it is likely we'll have same-night (or recent nights) photometric confirmation, and can design the filter accordingly.
+
+For automated follow-up observations and data reduction, it is best if a transient is well-offset from its host.
+This could be included in the ANTARES filter or be part of the GOATS target prioritization.
+
+Either we'll use one or more existing filters, or create a custom temporary filter for this demo.
+
+
+Follow-up observations and processing
+-------------------------------------
+
+The alerts end-to-end demo should only use instruments and follow-up observation types that can be automatically processed.
+This means, the observations can be automatically reduced to calibrated data products in a way that doesn't require human intervention).
+
+Las Cumbres: imagers and spectrographs have auto-reduction.
+
+SOAR: The Goodman spectrograph data has a quick-look reduction.
+
+Gemini N or S: GMOS would be processed with DRAGONS via GOATS.
 
 
 Components
@@ -142,7 +165,8 @@ EPO: Education and Public Outreach
 
 Comms: Communications team
 
-The Rubin EPO and Communications teams will bring this demo to the public with graphcs and press articles.
+The Rubin EPO and Communications teams will bring this demo to the public with graphics and press articles.
+These two teams will work with any relevant NSF NOIRLab and DOE communications teams.
 
 Contacts: Gaëlle Suter, Kristen Metzger, Stephanie Deppe
 

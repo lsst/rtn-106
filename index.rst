@@ -24,9 +24,7 @@ The target audience of this demo is both the science community and the general p
 Timeline
 ========
 
-**Goal:** Execute the alerts end-to-end demo by the end of November 2025.
-
-Contingency: mid-December 2025.
+The goal is to execute the alerts end-to-end demo by the end of November 2025, with a contingency of mid-December.
 
 
 Prerequisites
@@ -35,9 +33,10 @@ Prerequisites
 The conditions under which the first alerts end-to-end demo can occur are:
 
 * agency security review complete (done)
-* all observatories are on-sky (done)
+* all observatories are on-sky post-shutdown
 * all components are online
 * compatible fields are scheduled for observations
+* SOAR is in AEON mode
 * draft EPO/Comms announcements are prepared
 * humans are available
 
@@ -62,20 +61,6 @@ The following sequence of events might run in one night for one or more science 
 7. GOATS/Hermes: results (e.g., supernova classification) are shared with the science community (e.g., with a Transient Name Server report).
 
 8. Press: announcement from EPO/Comms teams goes out via the usual channels.
-
-
-Follow-up observations
-======================
-
-
-Las Cumbres
------------
-
-SOAR: The Goodman spectrograph.
-
-Gemini
------
-
 
 
 Potential targets
@@ -137,6 +122,36 @@ but confirmation of cometary activity (e.g., outgassing) might require too long 
 A new moving object (such as an NEO) would be unlikely on any given single night.
 
 
+
+Identification and follow-up
+============================
+
+ANTARES filter
+--------------
+
+In November 2025, most alerts are likely to come from the Deep Drilling Fields (DDFs), which have templates and are in observable regions of sky.
+
+Thus, in identifying the potential follow-up target it is likely we'll have same-night (or recent nights) photometric confirmation, and can design the filter accordingly.
+
+For automated follow-up observations and data reduction, it is best if a transient is well-offset from its host.
+This could be included in the ANTARES filter or be part of the GOATS target prioritization.
+
+Either we'll use one or more existing filters, or create a custom temporary filter for this demo.
+
+
+Follow-up observations and processing
+-------------------------------------
+
+The alerts end-to-end demo should only use instruments and follow-up observation types that can be automatically processed.
+This means, the observations can be automatically reduced to calibrated data products in a way that doesn't require human intervention).
+
+Las Cumbres: imagers and spectrographs have auto-reduction.
+
+SOAR: The Goodman spectrograph data has a quick-look reduction.
+
+Gemini N or S: GMOS would be processed with DRAGONS via GOATS.
+
+
 Components
 ==========
 
@@ -151,18 +166,9 @@ EPO: Education and Public Outreach
 Comms: Communications team
 
 The Rubin EPO and Communications teams will bring this demo to the public with graphics and press articles.
+These two teams will work with any relevant NSF NOIRLab and DOE communications teams.
 
 Contacts: Gaëlle Suter, Kristen Metzger, Stephanie Deppe
-
-
-NOIRLab CEE
------------
-
-CEE: Communications, Education & Engagement
-
-Similar to the Rubin EPO/Comms team activities.
-
-Contacts: TBD
 
 
 Rubin DIA and AP

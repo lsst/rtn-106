@@ -168,7 +168,7 @@ Comms: Communications team
 The Rubin EPO and Communications teams will bring this demo to the public with graphics and press articles.
 These two teams will work with any relevant NSF NOIRLab and DOE communications teams.
 
-Contacts: Gaëlle Suter, Kristen Metzger, Stephanie Deppe
+Contacts: Kristen Metzger, Stephanie Deppe
 
 
 Rubin DIA and AP

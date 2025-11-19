@@ -24,7 +24,7 @@ The target audience of this demo is both the science community and the general p
 Timeline
 ========
 
-The goal is to execute the alerts end-to-end demo by the end of November 2025, with a contingency of mid-December.
+The goal is to execute the alerts end-to-end demo by the end of January 2026.
 
 
 Prerequisites
